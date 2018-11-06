@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>OrangeHRM</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Login</td></tr>
+</thead>
+<tbody>
+<tr><td>store</td>
+<td>http://www.universitedutest.com/OrangeHRM<datalist><option>url</option><option>http://www.universitedutest.com/OrangeHRM</option></datalist></td>
+<td>url</td>
+</tr>
+<tr><td>store</td>
+<td>Admin<datalist><option>Admin</option></datalist></td>
+<td>login</td>
+</tr>
+<tr><td>store</td>
+<td>acial$2017<datalist><option>acial$2017</option></datalist></td>
+<td>password</td>
+</tr>
+<tr><td>open</td>
+<td>${url}<datalist><option>https://opensource-demo.orangehrmlive.com/index.php/auth/login</option><option>https://opensource-demo.orangehrmlive.com/</option><option>http://www.universitedutest.com/OrangeHRM</option><option>${url}</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>type</td>
+<td>id=txtUsername<datalist><option>id=txtUsername</option><option>name=txtUsername</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='LOGIN Panel'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::input[2]</option><option>//input[@id='txtUsername']</option><option>//div[@id='divUsername']/input</option><option>//div[2]/input</option><option>css=#txtUsername</option></datalist></td>
+<td>${login}</td>
+</tr>
+<tr><td>type</td>
+<td>id=txtPassword<datalist><option>id=txtPassword</option><option>name=txtPassword</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='LOGIN Panel'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/preceding::input[1]</option><option>//input[@id='txtPassword']</option><option>//div[@id='divPassword']/input</option><option>//div[3]/input</option><option>css=#txtPassword</option></datalist></td>
+<td>${password}</td>
+</tr>
+<tr><td>click</td>
+<td>id=btnLogin<datalist><option>id=btnLogin</option><option>name=Submit</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Username'])[1]/following::input[2]</option><option>//input[@id='btnLogin']</option><option>//div[@id='divLoginButton']/input</option><option>//div[5]/input</option><option>css=#btnLogin</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>verifyText</td>
+<td>id=welcome<datalist><option>id=welcome</option><option>link=Welcome Admin</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About'])[2]/preceding::a[3]</option><option>//a[contains(text(),'Welcome Admin')]</option><option>//a[@id='welcome']</option><option>//div[@id='branding']/a[2]</option><option>//a[contains(@href, '#')]</option><option>//a[2]</option><option>css=#welcome</option></datalist></td>
+<td>Welcome Admin</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AddEmployee</td></tr>
+</thead>
+<tbody>
+<tr><td>#</td>
+<td>Click sur le lien PIM<datalist><option>Click sur le lien PIM</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>store</td>
+<td>7008<datalist><option>7008</option></datalist></td>
+<td>EmployeeID</td>
+</tr>
+<tr><td>waitForElementPresent</td>
+<td>id=menu_pim_viewPimModule<datalist><option>id=menu_pim_viewPimModule</option><option>link=PIM</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Social Media Authentication'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Modules'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Optional Fields'])[1]/preceding::a[2]</option><option>//a[@id='menu_pim_viewPimModule']</option><option>//div[@id='wrapper']/div[2]/ul/li[2]/a</option><option>//a[contains(@href, '/OrangeHRM/symfony/web/index.php/pim/viewPimModule')]</option><option>//div[2]/ul/li[2]/a</option><option>css=#menu_pim_viewPimModule</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td><td>css=#menu_pim_viewPimModule &gt; b<datalist><option>css=#menu_pim_viewPimModule &gt; b</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register OAuth Client'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Social Media Authentication'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Optional Fields'])[1]/preceding::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Custom Fields'])[1]/preceding::b[1]</option><option>//a[@id='menu_pim_viewPimModule']/b</option><option>//li[2]/a/b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td>
+<td>id=menu_pim_addEmployee<datalist><option>id=menu_pim_addEmployee</option><option>link=Add Employee</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee List'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Termination Reasons'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reports'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Leave'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Add Employee')]</option><option>//a[@id='menu_pim_addEmployee']</option><option>//div[@id='wrapper']/div[2]/ul/li[2]/ul/li[3]/a</option><option>//a[contains(@href, '/index.php/pim/addEmployee')]</option><option>//li[2]/ul/li[3]/a</option><option>css=#menu_pim_addEmployee</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>type</td>
+<td>id=firstName<datalist><option>id=firstName</option><option>name=firstName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Middle Name'])[1]/preceding::input[1]</option><option>//input[@id='firstName']</option><option>//form[@id='frmAddEmp']/fieldset/ol/li/ol/li/input</option><option>//li/input</option><option>css=#firstName</option></datalist></td>
+<td>IMHAH</td>
+</tr>
+<tr><td>type</td>
+<td>id=lastName<datalist><option>id=lastName</option><option>name=lastName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee Id'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Photograph'])[1]/preceding::input[2]</option><option>//input[@id='lastName']</option><option>//form[@id='frmAddEmp']/fieldset/ol/li/ol/li[3]/input</option><option>//li/ol/li[3]/input</option><option>css=#lastName</option></datalist></td>
+<td>Hassan</td>
+</tr>
+<tr><td>type</td>
+<td>id=employeeId<datalist><option>id=employeeId</option><option>name=employeeId</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee Id'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Photograph'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px'])[1]/preceding::input[2]</option><option>//input[@id='employeeId']</option><option>//form[@id='frmAddEmp']/fieldset/ol/li[2]/input</option><option>//li[2]/input</option><option>css=#employeeId</option></datalist></td>
+<td>${EmployeeID}</td>
+</tr>
+<tr><td>click</td>
+<td>id=btnSave<datalist><option>id=btnSave</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[7]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM, Inc'])[1]/preceding::input[1]</option><option>//input[@id='btnSave']</option><option>//form[@id='frmAddEmp']/fieldset/p/input</option><option>//p/input</option><option>css=#btnSave</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>#</td>
+<td>Click sur bouton Edit de l'écran Détail<datalist><option>Click sur bouton Edit de l'écran Détail</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td>
+<td>id=btnSave<datalist><option>id=btnSave</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add Attachment'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Current File'])[1]/preceding::input[6]</option><option>//input[@id='btnSave']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/p/input</option><option>//p/input</option><option>css=#btnSave</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>#</td>
+<td>Radio bouton Genre Male<datalist><option>Radio bouton Genre Male</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td>
+<td>id=personal_optGender_2<datalist><option>id=personal_optGender_1</option><option>name=personal[optGender]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='License Expiry Date'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Female'])[1]/preceding::input[2]</option><option>//input[@id='personal_optGender_1']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li/ul/li/input</option><option>//ul/li/input</option><option>css=#personal_optGender_1</option><option>id=personal_optGender_2</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>select</td>
+<td>id=personal_cmbNation<datalist><option>id=personal_cmbNation</option><option>name=personal[cmbNation]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[1]/following::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/preceding::select[1]</option><option>//select[@id='personal_cmbNation']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[3]/select</option><option>//li[3]/select</option><option>css=#personal_cmbNation</option></datalist></td>
+<td>label=French</td>
+</tr>
+<tr><td>select</td>
+<td>id=personal_cmbMarital<datalist><option>id=personal_cmbMarital</option><option>name=personal[cmbMarital]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Female'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/preceding::select[2]</option><option>//select[@id='personal_cmbMarital']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[2]/select</option><option>//select</option><option>css=#personal_cmbMarital</option></datalist></td>
+<td>label=Single</td>
+</tr>
+<tr><td>type</td>
+<td>id=personal_DOB<datalist><option>id=personal_DOB</option><option>name=personal[DOB]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Should be a valid date in yyyy-mm-dd format'])[1]/preceding::input[1]</option><option>//input[@id='personal_DOB']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[4]/input</option><option>//ol[3]/li[4]/input</option><option>css=#personal_DOB</option></datalist></td>
+<td>2000-02-14</td>
+</tr>
+<tr><td>click</td>
+<td>id=btnSave<datalist><option>id=btnSave</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add Attachment'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Current File'])[1]/preceding::input[6]</option><option>//input[@id='btnSave']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/p/input</option><option>//p/input</option><option>css=#btnSave</option></datalist></td>
+<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AddEmployeeData</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Employees.csv<datalist><option>Employees.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>#</td>
+<td>Click sur le lien PIM<datalist><option>Click sur le lien PIM</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>echo</td><td>${LastName}<datalist><option>${LastName}</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td>
+<td>css=#menu_pim_viewPimModule &gt; b<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register OAuth Client'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Social Media Authentication'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Optional Fields'])[1]/preceding::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Custom Fields'])[1]/preceding::b[1]</option><option>//a[@id='menu_pim_viewPimModule']/b</option><option>//li[2]/a/b</option><option>css=#menu_pim_viewPimModule &gt; b</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td><td>css=#menu_pim_viewPimModule &gt; b<datalist><option>css=#menu_pim_viewPimModule &gt; b</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register OAuth Client'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Social Media Authentication'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Optional Fields'])[1]/preceding::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Custom Fields'])[1]/preceding::b[1]</option><option>//a[@id='menu_pim_viewPimModule']/b</option><option>//li[2]/a/b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td>
+<td>id=menu_pim_addEmployee<datalist><option>id=menu_pim_addEmployee</option><option>link=Add Employee</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee List'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Termination Reasons'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reports'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Leave'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Add Employee')]</option><option>//a[@id='menu_pim_addEmployee']</option><option>//div[@id='wrapper']/div[2]/ul/li[2]/ul/li[3]/a</option><option>//a[contains(@href, '/index.php/pim/addEmployee')]</option><option>//li[2]/ul/li[3]/a</option><option>css=#menu_pim_addEmployee</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>type</td>
+<td>id=firstName<datalist><option>id=firstName</option><option>name=firstName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Middle Name'])[1]/preceding::input[1]</option><option>//input[@id='firstName']</option><option>//form[@id='frmAddEmp']/fieldset/ol/li/ol/li/input</option><option>//li/input</option><option>css=#firstName</option></datalist></td>
+<td>${FirstName}</td>
+</tr>
+<tr><td>type</td>
+<td>id=lastName<datalist><option>id=lastName</option><option>name=lastName</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee Id'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Photograph'])[1]/preceding::input[2]</option><option>//input[@id='lastName']</option><option>//form[@id='frmAddEmp']/fieldset/ol/li/ol/li[3]/input</option><option>//li/ol/li[3]/input</option><option>css=#lastName</option></datalist></td>
+<td>${LastName}</td>
+</tr>
+<tr><td>type</td>
+<td>id=employeeId<datalist><option>id=employeeId</option><option>name=employeeId</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee Id'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Photograph'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px'])[1]/preceding::input[2]</option><option>//input[@id='employeeId']</option><option>//form[@id='frmAddEmp']/fieldset/ol/li[2]/input</option><option>//li[2]/input</option><option>css=#employeeId</option></datalist></td>
+<td>${EmployeeID}</td>
+</tr>
+<tr><td>click</td>
+<td>id=btnSave<datalist><option>id=btnSave</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[7]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM, Inc'])[1]/preceding::input[1]</option><option>//input[@id='btnSave']</option><option>//form[@id='frmAddEmp']/fieldset/p/input</option><option>//p/input</option><option>css=#btnSave</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>verifyText</td><td>css=h1<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Directory'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Dashboard'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Personal Details'])[1]/preceding::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact Details'])[1]/preceding::h1[1]</option><option>//div[@id='profile-pic']/h1</option><option>//h1</option><option>css=h1</option></datalist></td><td>${FirstName} ${LastName}</td>
+</tr>
+<tr><td>waitForElementPresent</td><td>link=Personal Details<datalist><option>link=Personal Details</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='${FirstName} ${LastName}'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Directory'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Contact Details'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Emergency Contacts'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Personal Details')]</option><option>//ul[@id='sidenav']/li/a</option><option>//a[contains(@href, '/OrangeHRM/symfony/web/index.php/pim/viewPersonalDetails/empNumber/0936')]</option><option>//div[3]/div/div/ul/li/a</option><option>css=#sidenav &gt; li.selected &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>#</td>
+<td>Click sur bouton Edit de l'écran Détail<datalist><option>Click sur bouton Edit de l'écran Détail</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td>
+<td>id=btnSave<datalist><option>id=btnSave</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add Attachment'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Current File'])[1]/preceding::input[6]</option><option>//input[@id='btnSave']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/p/input</option><option>//p/input</option><option>css=#btnSave</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>#</td>
+<td>Radio bouton Genre Male<datalist><option>Radio bouton Genre Male</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td>
+<td>id=personal_optGender_${Gender}<datalist><option>id=personal_optGender_1</option><option>name=personal[optGender]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gender'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='License Expiry Date'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Male'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Female'])[1]/preceding::input[2]</option><option>//input[@id='personal_optGender_1']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li/ul/li/input</option><option>//ul/li/input</option><option>css=#personal_optGender_1</option><option>id=personal_optGender_${Gender}</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>select</td>
+<td>id=personal_cmbNation<datalist><option>id=personal_cmbNation</option><option>name=personal[cmbNation]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[1]/following::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/preceding::select[1]</option><option>//select[@id='personal_cmbNation']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[3]/select</option><option>//li[3]/select</option><option>css=#personal_cmbNation</option></datalist></td>
+<td>label=${Nation}</td>
+</tr>
+<tr><td>select</td>
+<td>id=personal_cmbMarital<datalist><option>id=personal_cmbMarital</option><option>name=personal[cmbMarital]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Marital Status'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Female'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/preceding::select[2]</option><option>//select[@id='personal_cmbMarital']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[2]/select</option><option>//select</option><option>css=#personal_cmbMarital</option></datalist></td>
+<td>label=${Marital}</td>
+</tr>
+<tr><td>type</td>
+<td>id=personal_DOB<datalist><option>id=personal_DOB</option><option>name=personal[DOB]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of Birth'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nationality'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Should be a valid date in yyyy-mm-dd format'])[1]/preceding::input[1]</option><option>//input[@id='personal_DOB']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/ol[3]/li[4]/input</option><option>//ol[3]/li[4]/input</option><option>css=#personal_DOB</option></datalist></td>
+<td>${DateOfBirth}</td>
+</tr>
+<tr><td>click</td>
+<td>id=btnSave<datalist><option>id=btnSave</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add Attachment'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Current File'])[1]/preceding::input[6]</option><option>//input[@id='btnSave']</option><option>//form[@id='frmEmpPersonalDetails']/fieldset/p/input</option><option>//p/input</option><option>css=#btnSave</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DeleteEmployees</td></tr>
+</thead>
+<tbody>
+<tr><td>loadVars</td><td>Employees.csv<datalist><option>Employees.csv</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>css=#menu_pim_viewPimModule &gt; b<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Social Media Authentication'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Modules'])[1]/following::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Optional Fields'])[1]/preceding::b[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Custom Fields'])[1]/preceding::b[1]</option><option>//a[@id='menu_pim_viewPimModule']/b</option><option>//li[2]/a/b</option><option>css=#menu_pim_viewPimModule &gt; b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=menu_pim_viewEmployeeList<datalist><option>id=menu_pim_viewEmployeeList</option><option>link=Employee List</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Termination Reasons'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reporting Methods'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add Employee'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Reports'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Employee List')]</option><option>//a[@id='menu_pim_viewEmployeeList']</option><option>//div[@id='wrapper']/div[2]/ul/li[2]/ul/li[2]/a</option><option>//a[contains(@href, '/OrangeHRM/symfony/web/index.php/pim/viewEmployeeList/reset/1')]</option><option>//li[2]/ul/li[2]/a</option><option>css=#menu_pim_viewEmployeeList</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=empsearch_id<datalist><option>id=empsearch_id</option><option>name=empsearch[id]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Id'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employee Name'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Employment Status'])[2]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Include'])[1]/preceding::input[1]</option><option>//input[@id='empsearch_id']</option><option>//form[@id='search_form']/fieldset/ol/li[2]/input</option><option>//li[2]/input</option><option>css=#empsearch_id</option></datalist></td><td>${EmployeeID}</td>
+</tr>
+<tr><td>click</td><td>id=searchBtn<datalist><option>id=searchBtn</option><option>name=_search</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sub Unit'])[1]/following::input[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Job Title'])[1]/following::input[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Id'])[2]/preceding::input[6]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='First (&amp; Middle) Name'])[1]/preceding::input[6]</option><option>//input[@id='searchBtn']</option><option>//form[@id='search_form']/fieldset/p/input</option><option>//p/input</option><option>css=#searchBtn</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=ohrmList_chkSelectAll<datalist><option>id=ohrmList_chkSelectAll</option><option>name=chkSelectAll</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sub Unit'])[1]/following::input[10]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Job Title'])[1]/following::input[10]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Id'])[2]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='First (&amp; Middle) Name'])[1]/preceding::input[1]</option><option>//input[@id='ohrmList_chkSelectAll']</option><option>//table[@id='resultTable']/thead/tr/th/input</option><option>//th/input</option><option>css=#ohrmList_chkSelectAll</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=btnDelete<datalist><option>id=btnDelete</option><option>name=btnDelete</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sub Unit'])[1]/following::input[9]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Job Title'])[1]/following::input[9]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Id'])[2]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='First (&amp; Middle) Name'])[1]/preceding::input[2]</option><option>//input[@id='btnDelete']</option><option>//form[@id='frmList_ohrmListComponent']/div/input[2]</option><option>//div/input[2]</option><option>css=#btnDelete</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=dialogDeleteBtn<datalist><option>id=dialogDeleteBtn</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM - Confirmation Required'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='OrangeHRM, Inc'])[1]/preceding::input[2]</option><option>//input[@id='dialogDeleteBtn']</option><option>//div[@id='deleteConfModal']/div[3]/input</option><option>//div[3]/input</option><option>css=#dialogDeleteBtn</option></datalist></td><td></td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Logout</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td>
+<td>id=welcome<datalist><option>id=welcome</option><option>link=Welcome Admin</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/preceding::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About'])[2]/preceding::a[3]</option><option>//a[contains(text(),'Welcome Admin')]</option><option>//a[@id='welcome']</option><option>//div[@id='branding']/a[2]</option><option>//a[contains(@href, '#')]</option><option>//a[2]</option><option>css=#welcome</option></datalist></td>
+<td></td>
+</tr>
+<tr><td>click</td>
+<td>link=Logout<datalist><option>link=Logout</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About'])[2]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Confirm Toggl Sync'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='welcome-menu']/ul/li[2]/a</option><option>//a[contains(@href, '/index.php/auth/logout')]</option><option>//li[2]/a</option></datalist></td>
+<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
